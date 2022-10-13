@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="location.href='Home.html'">BACK</button> 
+
+    <!-- Flow-Tranducer 1 -->
+    <p id="Name_1"> </p>
+    <p id="Plantsite_1"> </p>
+    <p id="Range_1"> </p>
+    <p id="Type_1"> </p>
+    <p id="Unit_1"> </p>
+    <p id="Value_1"> </p>
+    <br>
+
+    <!-- Flow-Tranducer 2 -->
+    <p id="Name_2"> </p>
+    <p id="Plantsite_2"> </p>
+    <p id="Range_2"> </p>
+    <p id="Type_2"> </p>
+    <p id="Unit_2"> </p>
+    <p id="Value_2"> </p>
+    <br>
+
+    <!-- Flow-Tranducer 3 -->
+    <p id="Name_3"> </p>
+    <p id="Plantsite_3"> </p>
+    <p id="Range_3"> </p>
+    <p id="Type_3"> </p>
+    <p id="Unit_3"> </p>
+    <p id="Value_3"> </p>
+    <br>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            fetch('https://midterm-exam-010723313-2022.herokuapp.com/device?sensor_type=flow-transducer')
+            .then(response => response.json()) 
+            .then(data => {
+                console.log(data);
+                
+                // Flow-Tranducer 1
+                let name_1  = data[0].name;
+                let type_1  = data[0].type;
+                let unit_1  = data[0].unit;
+                let range_1 = data[0].range;
+                let plantsite_1  = data[0]["plant-site"];
+                let value_1 = data[0].value;
+
+                document.getElementById('Name_1').innerHTML = `Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   : ${name_1}`;
+                document.getElementById('Type_1').innerHTML = `Type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   : ${type_1}`;
+                document.getElementById('Unit_1').innerHTML = `Unit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   : ${unit_1}`;
+                document.getElementById('Range_1').innerHTML = `Range &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : ${range_1}`;
+                document.getElementById('Plantsite_1').innerHTML = `Plant-site &nbsp;&nbsp; : ${plantsite_1}`;
+                document.getElementById('Value_1').innerHTML = `Value &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : ${value_1}`;
+                
+                // Flow-Tranducer 2
+                let name_2  = data[1].name;
+                let type_2  = data[1].type;
+                let unit_2  = data[1].unit;
+                let range_2 = data[1].range;
+                let plantsite_2  = data[1]["plant-site"];
+                let value_2 = data[1].value;
+
+                document.getElementById('Name_2').innerHTML = `Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   : ${name_2}`;
+                document.getElementById('Type_2').innerHTML = `Type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   : ${type_2}`;
+                document.getElementById('Unit_2').innerHTML = `Unit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   : ${unit_2}`;
+                document.getElementById('Range_2').innerHTML = `Range &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : ${range_2}`;
+                document.getElementById('Plantsite_2').innerHTML = `Plant-site &nbsp;&nbsp; : ${plantsite_2}`;
+                document.getElementById('Value_2').innerHTML = `Value &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : ${value_2}`;
+
+                // Flow-Tranducer 3
+                let name_3  = data[2].name;
+                let type_3  = data[2].type;
+                let unit_3  = data[2].unit;
+                let range_3 = data[2].range;
+                let plantsite_3  = data[2]["plant-site"];
+                let value_3 = data[2].value;
+
+                document.getElementById('Name_3').innerHTML = `Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   : ${name_3}`;
+                document.getElementById('Type_3').innerHTML = `Type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   : ${type_3}`;
+                document.getElementById('Unit_3').innerHTML = `Unit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   : ${unit_3}`;
+                document.getElementById('Range_3').innerHTML = `Range &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : ${range_3}`;
+                document.getElementById('Plantsite_3').innerHTML = `Plant-site &nbsp;&nbsp; : ${plantsite_3}`;
+                document.getElementById('Value_3').innerHTML = `Value &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : ${value_3}`;
+                
+                
+            })   
+        })
+    </script>
+    
+</body>
+</html>
