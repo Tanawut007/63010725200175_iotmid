@@ -5,6 +5,11 @@ body{
     background-attachment: fixed;
 
 }
+h1{
+    align-self: center;
+    color: #ff8400;
+    font-size: 60px;
+}
 .send{
     position: absolute;
     top: 50%;
