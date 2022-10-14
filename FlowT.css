@@ -1,0 +1,92 @@
+body{
+    background-image: url('4moyfEI.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+h1{
+    align-self: center;
+    color: #ff8400;
+    font-size: 60px;
+}
+.value{
+    font-size: 20px;
+    font-weight: bold;
+    color:#ff8400;
+}
+.value1{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    border-style: double;
+    border-width: 9px;
+    padding: 30px;
+    border-color: #ff8400;
+    
+
+}
+.value2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: double;
+    border-width: 9px;
+    padding: 30px;
+    border-color: #ff8400;
+
+}
+.value3{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    border-style: double;
+    border-width: 9px;
+    padding: 30px;
+    border-color: #ff8400;
+
+}
+.container1
+{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button1{
+    position: relative;
+    text-align: center; 
+    width: 50px; 
+    padding: 15px;
+    font-size: 15px;
+    color: #ff8400;
+    font-weight: 400;
+    border: 5px solid #ff8400; 
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-radius: 150px;
+    transition: 1.5s;
+
+    
+}
+.button1:hover{
+     box-shadow: 0 5px 50px 0  #ffffff inset, 0 5px 50px 0  #ffffff ,
+                 0 5px 50px 0  #ffffff inset, 0 5px 50px 0  #ffffff ; 
+    
+}
+.Jason{
+    margin-left: 60%
+}
+.bat{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top:  30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}

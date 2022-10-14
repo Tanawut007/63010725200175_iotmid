@@ -190,6 +190,34 @@ h6 span:nth-child(8){
                  0 5px 50px 0  #ffffff inset, 0 5px 50px 0  #ffffff ; 
     
 }
+.container5
+{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button5{
+    position: relative;
+    text-align: center; 
+    width: 350px; 
+    padding: 15px;
+    font-size: 15px;
+    color: #ff8400;
+    font-weight: 400;
+    border: 5px solid #ff8400; 
+    text-transform: uppercase; 
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-radius: 150px;
+    transition: 1.5s;
+
+    
+}
+.button5:hover{
+     box-shadow: 0 5px 50px 0  #ffffff inset, 0 5px 50px 0  #ffffff ,
+                 0 5px 50px 0  #ffffff inset, 0 5px 50px 0  #ffffff ; 
+}
 
 .pumkin {
     height: 350px;
@@ -199,11 +227,19 @@ h6 span:nth-child(8){
     left: 10%;
     transform: translate(-50%, -50%);
 }
-.Vampire{
+.vamp{
     height: 350px;
     width: 350px;
     position: absolute;
     top: 85%;
     left: 90%;
+    transform: translate(-50%, -50%);
+}
+.bat1{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 85%;
+    left: 10%;
     transform: translate(-50%, -50%);
 }
